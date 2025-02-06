@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato Leaf Diseases Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .video-section {
+            background-color: #201d1d;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .upload-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .upload-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .upload-btn:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tomato Leaf Diseases Detection</h1>
+</header>
+
+<div class="container">
+
+
+    <div class="video-section">
+        <img src="{{ url_for('detect') }}" alt="Uploaded file">
+    </div>
+
+    <div class="upload-form">
+        <form method="POST" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            {{ form.file(class_="custom-file-input") }}
+            <br><br>
+            <button type="submit" class="upload-btn">Upload File</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
