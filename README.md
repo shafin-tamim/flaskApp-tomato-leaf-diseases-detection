@@ -4,10 +4,10 @@ This is Tthe advanced detection system to identify common tomato leaf diseases. 
 
 # Images Of The Project
 
-##Front Page
+-Front Page
 
 ![Uploading image.png…]()
 
-##After Predited 
+-After Predited 
 
 ![Uploading image.png…]()
