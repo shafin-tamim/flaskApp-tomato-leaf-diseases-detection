@@ -10,4 +10,4 @@ This is Tthe advanced detection system to identify common tomato leaf diseases. 
 
 -After Predited 
 
-![Uploading image.png…]()
+![image alt](https://github.com/shafin201/FaskApp-Tomato-Leaf-Diseases-Detection/blob/main/project%20_ss/Picture2.png?raw=true)
